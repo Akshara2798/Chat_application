@@ -1,0 +1,340 @@
+/* ================= BODY ================= */
+
+body{
+
+    margin:0;
+    padding:0;
+
+    font-family:Arial, sans-serif;
+
+    background-image:url('/static/4686241.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    overflow:hidden;
+}
+
+
+/* ================= MAIN LAYOUT ================= */
+
+.main-container{
+
+    display:flex;
+
+    gap:20px;
+
+    padding:20px;
+
+    height:100vh;
+
+    box-sizing:border-box;
+}
+
+
+/* ================= GLASS EFFECT ================= */
+
+.glass{
+
+    background:rgba(10,10,30,0.22);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border-radius:18px;
+
+    border:1px solid rgba(168,85,247,0.2);
+
+    box-shadow:
+        0 8px 32px rgba(0,0,0,0.35);
+
+    padding:20px;
+}
+
+
+/* ================= LEFT PANEL ================= */
+
+.left-panel{
+
+    width:30%;
+
+    border-right:2px solid rgba(59,130,246,0.4);
+
+    overflow-y:auto;
+}
+
+
+/* ================= RIGHT PANEL ================= */
+
+.right-panel{
+
+    width:70%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    border-left:2px solid rgba(168,85,247,0.4);
+}
+
+
+/* ================= HEADINGS ================= */
+
+h1,
+h2,
+h3 {
+
+    background: linear-gradient(
+        90deg,
+        #3b82f6,
+        #a855f7,
+        #ffffff
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    font-weight: 800;
+}
+
+
+/* ================= TEXT ================= */
+
+p,
+div,
+span,
+label{
+
+    color:#d6dcff;
+
+    text-shadow:
+        0 0 6px rgba(59,130,246,0.25),
+        0 0 10px rgba(168,85,247,0.15),
+        1px 1px 2px rgba(0,0,0,0.8);
+}
+
+
+/* ================= FILE INPUT ================= */
+
+input[type="file"]{
+
+    width:100%;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    border:1px solid rgba(168,85,247,0.4);
+
+    background:rgba(10,10,30,0.35);
+
+    color:#e6eaff;
+
+    cursor:pointer;
+
+    backdrop-filter:blur(10px);
+}
+
+
+/* ================= CHAT INPUT ================= */
+
+input[type="text"]{
+
+    flex:1;
+
+    padding:14px;
+
+    background:rgba(10,10,30,0.35);
+
+    border:1px solid rgba(168,85,247,0.4);
+
+    border-radius:10px;
+
+    color:#e6eaff;
+
+    backdrop-filter:blur(10px);
+
+    outline:none;
+
+    font-size:15px;
+}
+
+
+input::placeholder{
+
+    color:rgba(214,220,255,0.6);
+}
+
+
+input:focus{
+
+    border:1px solid rgba(59,130,246,0.7);
+
+    box-shadow:0 0 15px rgba(168,85,247,0.4);
+}
+
+
+/* ================= CHAT BOX ================= */
+
+#chat-box{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    margin-top:10px;
+
+    padding:15px;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,0.04);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+}
+
+
+/* ================= CHAT MESSAGE ================= */
+
+.message{
+
+    padding:12px;
+
+    border-radius:12px;
+
+    max-width:90%;
+
+    word-wrap:break-word;
+}
+
+
+/* ================= USER MESSAGE ================= */
+
+.user-message{
+
+    align-self:flex-end;
+
+    background:rgba(59,130,246,0.18);
+
+    border:1px solid rgba(59,130,246,0.3);
+}
+
+
+/* ================= AI MESSAGE ================= */
+
+.ai-message{
+
+    align-self:flex-start;
+
+    background:rgba(168,85,247,0.18);
+
+    border:1px solid rgba(168,85,247,0.3);
+}
+
+
+/* ================= SYSTEM MESSAGE ================= */
+
+.system-message{
+
+    align-self:center;
+
+    background:rgba(34,197,94,0.18);
+
+    border:1px solid rgba(34,197,94,0.4);
+
+    color:#bbf7d0;
+
+    font-weight:bold;
+}
+
+
+/* ================= INPUT AREA ================= */
+
+.input-container{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:15px;
+}
+
+
+/* ================= BUTTON ================= */
+
+button{
+
+    padding:14px 22px;
+
+    background:linear-gradient(
+        90deg,
+        #3b82f6,
+        #a855f7
+    );
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    box-shadow:
+        0 0 12px rgba(168,85,247,0.3);
+
+    font-weight:bold;
+}
+
+
+button:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:
+        0 0 18px rgba(59,130,246,0.5);
+}
+
+
+/* ================= UPLOAD STATUS ================= */
+
+#upload-status{
+
+    margin-top:15px;
+
+    color:#86efac;
+
+    font-weight:bold;
+
+    text-align:center;
+}
+
+
+/* ================= SCROLLBAR ================= */
+
+#chat-box::-webkit-scrollbar{
+
+    width:8px;
+}
+
+
+#chat-box::-webkit-scrollbar-thumb{
+
+    background:rgba(168,85,247,0.5);
+
+    border-radius:10px;
+}

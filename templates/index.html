@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aero Chat</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<div class="main-container">
+
+    <!-- LEFT PANEL -->
+    <div class="glass left-panel">
+
+        <h2>📄 PDF Upload</h2>
+
+        <br>
+
+        <!-- FILE INPUT -->
+        <input
+            type="file"
+            id="fileInput"
+            accept=".pdf"
+        >
+
+        <br><br>
+
+        <!-- UPLOAD BUTTON -->
+        <button onclick="sendMessage_1()">
+            Upload PDF
+        </button>
+
+        <br><br>
+
+        <!-- UPLOAD STATUS -->
+        <div id="upload-status"></div>
+
+        <br>
+
+        <div id="history"></div>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="glass right-panel">
+
+        <h2>💬 Chat Window</h2>
+
+        <!-- CHAT BOX -->
+        <div id="chat-box"></div>
+
+        <!-- INPUT AREA -->
+        <div class="input-container">
+
+            <input
+                type="text"
+                id="message"
+                placeholder="Type your message"
+            >
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
